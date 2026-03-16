@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class isCircCollision {
     public static void main(String[] args){
         int x, y, r, x1, y1;
-
+//      int h = sc.nextInt(), k = sc.nextInt(), r = sc.nextInt(); ...... 이런 식으로!
         Scanner sc = new Scanner(System.in);
         System.out.print("원의 중심(x,y) 좌표와 반지름을 입력하세요: ");
         x= sc.nextInt();
