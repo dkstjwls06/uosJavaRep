@@ -1,4 +1,32 @@
 package ch02.miniProject;
 
+import java.util.Scanner;
+
 public class IsRectCollision {
+    public static void main(String[] args){
+        int x1, y1, x2, y2, w1, w2, h1, h2;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("사각형 A의 좌상단 좌표 (x1, y1), 너비, 높이: ");
+        x1= sc.nextInt();
+        y1 = sc.nextInt();
+        w1=sc.nextInt();
+        h1=sc.nextInt();
+        System.out.print("사각형 B의 좌상단 좌표 (x2, y2), 너비, 높이: ");
+        x2= sc.nextInt();
+        y2 = sc.nextInt();
+        w2=sc.nextInt();
+        h2=sc.nextInt();
+
+//        if(((x2 - x1 < w1)&&(y2 - y1 < h1)) || ((x1 - x2 < w2)&&(y2 - y1 < h1)) || ((x1 - x2 < w2)&&(y1 - y2 < h2)) || ((x2 - x1 < w1)&&(y1 - y2 < h2))){
+//            System.out.println("사각형이 겹칩니다.");
+//        } else {
+//            System.out.println("사각형이 겹치지 않습니다.");
+//        }
+        if((x1 + w1 <= x2) || (x2 + w2 <= w1) || (y1 + h1 <= y2) || (y2 + h2 <= y1)){
+            System.out.println("사각형이 겹치지 않습니다.");
+        } else {
+            System.out.println("사각형이 겹칩니다.");
+        }
+    }
 }
