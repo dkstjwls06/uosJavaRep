@@ -1,3 +1,5 @@
+package ch01;
+
 public class Programming1 {
     public static void main(String[] args){
         int a = 1000, b = 2000;
