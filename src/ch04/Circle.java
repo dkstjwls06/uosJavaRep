@@ -1,6 +1,6 @@
 package ch04;
 
-public class Circle {
+class Circle {
     public int radius;
     public String color;
 
