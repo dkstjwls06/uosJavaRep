@@ -19,6 +19,20 @@ public class DrawShapes2 extends JFrame {
             g.drawLine(x,y+height-1,x+width,y);
             x+=gWidth;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             g.setColor(Color.BLUE);
             g.drawRect(x,y,width,height);
             x+=gWidth;
