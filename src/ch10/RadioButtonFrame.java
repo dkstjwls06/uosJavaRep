@@ -1,6 +1,7 @@
 package ch10;
 
 import javax.swing.*;
+import javax.swing.border.Border;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -29,6 +30,8 @@ public class RadioButtonFrame extends JFrame implements ActionListener {
         sizePanel.add(small);
         sizePanel.add(medium);
         sizePanel.add(large);
+        Border border = BorderFactory.createTitledBorder("크기");
+        sizePanel.setBorder(border);
         add(sizePanel, BorderLayout.CENTER);
         resultPanel = new JPanel();
         text = new JLabel("크기가 선택되지 않았습니다.");

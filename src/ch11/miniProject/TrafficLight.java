@@ -23,9 +23,22 @@ class MyPanel extends JPanel
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
+        int x = 50, y = 20;
+        Color[] colors = {Color.RED, Color.YELLOW, Color.GREEN};
 
-        g.setColor(Color.RED);
-        g.fillOval(50,20,100,100);
+        for(int i=0; i<3;i++){
+            g.setColor(Color.BLACK);
+            if(i == light_number){
+                g.setColor(colors[i]);
+                g.fillOval(x,y,100,100);
+            } else {
+                g.drawOval(x,y,100,100);
+            }
+            x+=100;
+        }
+
+
+
 
     }
 }

@@ -10,6 +10,7 @@ public class ImageViewer extends JFrame implements ActionListener {
     public ImageViewer() {
         setTitle("ImageViewer"); // 창 제목 설정
         setSize(350, 300); // 창 크기 설정
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
 // 메뉴바 생성 및 설정
         JMenuBar mbar = new JMenuBar(); // 메뉴바 생성
         JMenu m = new JMenu("File"); // ‘File’ 메뉴 생성

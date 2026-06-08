@@ -11,7 +11,7 @@ public class HangmanGame {
         String[] words = {"java","school","student","book"};
         String solution = words[random.nextInt(words.length)];
         StringBuffer answer = new StringBuffer(solution.length());
-        for(int i=0;i<solution.length();i++) answer.append('_');
+        answer.repeat("_", solution.length());
         System.out.println("행맨 게임에 오신 것을 환영합니다.");
         int maxAttempts = 7;
         int attemptsLeft = maxAttempts;
