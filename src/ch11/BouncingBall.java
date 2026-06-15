@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-// 실습 안한 거
+// 실습한 거
 public class BouncingBall extends JFrame implements ActionListener {
     static final int WIDTH = 600;
     static final int HEIGHT = 200;
