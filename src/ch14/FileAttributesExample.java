@@ -1,5 +1,5 @@
 package ch14;
-
+// 수업시간 실습
 import java.io.File;
 public class FileAttributesExample {
     public static void main(String[] args) {

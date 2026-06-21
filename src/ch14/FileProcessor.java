@@ -1,5 +1,5 @@
 package ch14;
-
+//수업시간 실습
 import java.io.*;
 import java.util.Scanner;
 public class FileProcessor {
